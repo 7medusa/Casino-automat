@@ -14,25 +14,25 @@ def vergleich():
                 print("jackpot")
                 score = score + 10
         if zufall1 == zufall2 == zufall3:
-                print("alle gleich")
+                print("all same")
                 score = score + 5
         elif zufall1 == zufall2 or zufall1 == zufall3 or zufall2 == zufall3:
-                print("zwei gleich")
+                print("twice same")
                 score = score + 2
         else:
-                print("nichts")
+                print("nothing")
 while score > 0:
         eingabe = int(input(">"))
         if eingabe == 1:
                 score = score - 1
                 zufall()
                 vergleich()
-                print(f"Guthaben: {score}")
+                print(f"score: {score}")
                 eingabe = 0
         elif eingabe == 2:
                 exit()
         elif score == 100:
-                print("gewonnen")
+                print("win")
         else:
-                print("fehler")
-print("verloren")
+                print("error")
+print("lose")
