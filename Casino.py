@@ -1,5 +1,4 @@
 import random
-
 score = 12
 bilder = ["platin", "diamant", "gold", "eisen", "bronze", "holz"]
 
