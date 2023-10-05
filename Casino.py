@@ -1,4 +1,5 @@
 import random
+
 score = 12
 bilder = ["platin", "diamant", "gold", "eisen", "bronze", "holz"]
 
@@ -28,17 +29,21 @@ def vergleich():
         print("nothing")
 
 
-while score > 0:
-    eingabe = int(input(">"))
-    if eingabe == 1:
-        score = score - 1
-        zufall()
-        vergleich()
-        print(f"score: {score}")
-        eingabe = 0
-    elif eingabe == 2:
-        exit()
-    else:
-        print("error")
+def main():
+    while score > 0:
+        eingabe = int(input(">"))
+        if eingabe == 1:
+            score = score - 1
+            zufall()
+            vergleich()
+            print(f"score: {score}")
+            eingabe = 0
+        elif eingabe == 2:
+            exit()
+        else:
+            print("error")
+    print("lose")
 
-print("lose")
+
+if __name__ == "__main__":
+    main()
