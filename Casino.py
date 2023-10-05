@@ -18,7 +18,7 @@ def vergleich():
     if zufall1 == "platin" and zufall2 == "platin" and zufall3 == "platin":
         print("jackpot")
         score = score + 10
-    if zufall1 == zufall2 == zufall3:
+    elif zufall1 == zufall2 == zufall3:
         print("all same")
         score = score + 5
     elif zufall1 == zufall2 or zufall1 == zufall3 or zufall2 == zufall3:
