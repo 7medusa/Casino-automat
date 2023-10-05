@@ -38,8 +38,6 @@ while score > 0:
         eingabe = 0
     elif eingabe == 2:
         exit()
-    elif score == 100:
-        print("win")
     else:
         print("error")
 
